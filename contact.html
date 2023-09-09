@@ -22,10 +22,29 @@
         </nav>
     </header>
     <main>
+        <div>
+        <h2>Place An Event Order</h2>
+        <p> Fill in the following form to place an order. Please include the type of dessert,
+            how many people will you have, and customizations you would like on the dessert.
+            Please not that this form is only for events and orders placed must be done 2 weeks
+            in advanced. </p>
         <form action="/submit" method="post">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter Your Name Here"
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name Here">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email Here">
+            <br>
+            <label for="date">Please Choose A Pick Up Date</label>
+            <input type="date" id="date" name="date">
+            <br>
+            <label for="time">Please Choose A Pick Up Time</label>
+            <input type="time" id="time" name="time" min="7" max="8">
+            <br>
+            <label for="comments">Order Details</label>
+            <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
         </form>
+        </div>
     </main>
     <footer>
         <p>&copy;Copyright 2023 Sweet Treats</p>
